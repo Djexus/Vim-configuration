@@ -13,6 +13,7 @@ map <C-W> :q<CR>
 
 set nocompatible
 set number
+set history=700
 set numberwidth=4
 set background=light
 set tabpagemax=10
