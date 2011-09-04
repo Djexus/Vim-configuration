@@ -12,6 +12,7 @@ map <C-E> :tabnew $MYVIMRC<CR>
 map <C-W> :q<CR>
 
 set nocompatible
+set autoread
 set number
 set history=700
 set numberwidth=4
