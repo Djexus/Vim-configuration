@@ -24,7 +24,7 @@ set foldmethod=indent
 set foldlevel=99
 set completeopt=longest,menu
 
-au bufwritepost * :!git add -u
+au bufwritepost * :!git add -u && git commit %
 
 au bufwritepost .vimrc source $MYVIMRC
 
