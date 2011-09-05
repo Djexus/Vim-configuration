@@ -9,6 +9,7 @@ map <C-Right> :tabn<CR>
 map <C-Z> :undo<CR>
 map <C-Y> :redo<CR>
 map <C-E> :tabnew $MYVIMRC<CR>
+map <C-G> :!git add -u<CR> :!git commit %<CR>
 map <C-W> :q<CR>
 
 set nocompatible
@@ -23,8 +24,6 @@ set smarttab
 set foldmethod=indent 
 set foldlevel=99
 set completeopt=longest,menu
-
-au bufwritepost * :!git add -u && git commit %
 
 au bufwritepost .vimrc source $MYVIMRC
 
