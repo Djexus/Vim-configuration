@@ -3,14 +3,15 @@ syn on
 map <C-O> :NERDTreeToggle<CR>
 map <C-S> :w<CR>
 map <C-P> :hardcopy<CR>
-map <C-T> :tabnew<CR>
-map <C-Left> :tabp<CR>
-map <C-Right> :tabn<CR>
+map <C-W> :q<CR>
 map <C-Z> :undo<CR>
 map <C-Y> :redo<CR>
 map <C-E> :tabnew $MYVIMRC<CR>
-map <C-G> :!git add -u<CR> :!git commit %<CR>
-map <C-W> :q<CR>
+map <C-T> :tabnew<CR>
+map <C-Left> :tabp<CR>
+map <C-Right> :tabn<CR>
+map <C-J><C-B> :!git add -u<CR> :!git commit %<CR>
+map <C-J><C-P> :!git push origin<CR>
 
 set nocompatible
 set autoread
