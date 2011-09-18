@@ -10,7 +10,7 @@ map <C-E> :tabnew $MYVIMRC<CR>
 map <C-T> :tabnew<CR>
 map <C-Left> :tabp<CR>
 map <C-Right> :tabn<CR>
-map <C-J><C-B> :!git add -u<CR> :!git commit %<CR>
+map <C-J><C-B> :!git add -A<CR> :!git commit %<CR>
 map <C-J><C-P> :!git push origin<CR>
 
 set nocompatible
