@@ -1,5 +1,6 @@
 syn on
 
+map <C-N> :vsplit<CR>
 map <C-O> :NERDTreeToggle<CR>
 map <C-S> :w<CR>
 map <C-P> :hardcopy<CR>
@@ -8,8 +9,11 @@ map <C-Z> :undo<CR>
 map <C-Y> :redo<CR>
 map <C-E> :tabnew $MYVIMRC<CR>
 map <C-T> :tabnew<CR>
-map <C-Left> :tabp<CR>
-map <C-Right> :tabn<CR>
+map <TAB> :tabn<CR>
+map <C-Up> :wincmd k<CR>
+map <C-Right> :wincmd l<CR>
+map <C-Left> :wincmd h<CR>
+map <C-Down> :wincmd j<CR>
 map <C-J><C-I> :!git init<CR> :tabnew .gitignore<CR>
 map <C-J><C-B> :!git add -A<CR> :!git commit %<CR>
 map <C-J><C-P> :!git push origin<CR>
